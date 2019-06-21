@@ -44,7 +44,7 @@ flags.DEFINE_string('checkpoint_dir', 'ml_perf/checkpoint/{}'.format(N),
 flags.DEFINE_string('target_path', 'ml_perf/target/{}/target.pb'.format(N),
                     'Path to the target model to beat.')
 
-flags.DEFINE_integer('iterations', 100, 'Number of iterations of the RL loop.')
+flags.DEFINE_integer('iterations', 4, 'Number of iterations of the RL loop.')
 
 flags.DEFINE_float('gating_win_rate', 0.55,
                    'Win-rate against the current best required to promote a '
